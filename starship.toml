@@ -1,8 +1,53 @@
 [character]
-success_symbol = "[[](bg:#57686B fg:#A6A6A6)](fg:#57686B)"
-error_symbol = "[[](bg:#FF6E79 fg:#A6A6A6)](fg:#FF6E79)"
-vicmd_symbol = "[[](bg:#545B68 fg:#A6A6A6)[](bg:#A6A6A6 fg:#545B68)](bold bg:#545B68 fg:#FF6E79)"
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
+
+[os]
+disabled = false
 format = "$symbol "
+
+[os.symbols]
+Alpaquita = "🔔 "
+Alpine = "🏔️ "
+Amazon = "🙂 "
+Android = "🤖 "
+Arch = "🎗️ "
+Artix = "🎗️ "
+CentOS = "💠 "
+Debian = "🌀 "
+DragonFly = "🐉 "
+Emscripten = "🔗 "
+EndeavourOS = "🚀 "
+Fedora = "🎩 "
+FreeBSD = "😈 "
+Garuda = "🦅 "
+Gentoo = "🗜️ "
+HardenedBSD = "🛡️ "
+Illumos = "🐦 "
+Linux = "🐧 "
+Mabox = "📦 "
+Macos = "🍎 "
+Manjaro = "🥭 "
+Mariner = "🌊 "
+MidnightBSD = "🌘 "
+Mint = "🌿 "
+NetBSD = "🚩 "
+NixOS = "❄️ "
+OpenBSD = "🐡 "
+OpenCloudOS = "☁️ "
+openEuler = "🦉 "
+openSUSE = "🦎 "
+OracleLinux = "🦴 "
+Pop = "🍭 "
+Raspbian = "🍓 "
+Redhat = "🎩 "
+RedHatEnterprise = "🎩 "
+Redox = "🧪 "
+Solus = "⛵ "
+SUSE = "🦎 "
+Ubuntu = "🎯 "
+Unknown = "❓ "
+Windows = "🪟 "
 
 [aws]
 symbol = "  "
@@ -21,6 +66,8 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
+truncation_length = 3
+truncation_symbol = '…/'
 
 [docker_context]
 symbol = " "
@@ -36,6 +83,8 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+truncation_length = 4
+truncation_symbol = ''
 
 [golang]
 symbol = " "
@@ -51,14 +100,6 @@ symbol = "⌘ "
 
 [hg_branch]
 symbol = " "
-
-[hostname]
-ssh_symbol = " "
-ssh_only = false
-format = "<[$hostname]($style)>"
-trim_at = "-"
-style = "bold dimmed white"
-disabled = true
 
 [java]
 symbol = " "
@@ -84,47 +125,6 @@ symbol = " "
 [nodejs]
 symbol = " "
 
-[os.symbols]
-Alpaquita = " "
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = "󰍲 "
-
 [package]
 symbol = "󰏗 "
 
@@ -132,7 +132,7 @@ symbol = "󰏗 "
 symbol = "🪺 "
 
 [python]
-symbol = " "
+symbol = "🐍 "
 
 [rlang]
 symbol = "󰟔 "
